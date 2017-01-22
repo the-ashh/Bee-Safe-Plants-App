@@ -1,2 +1,3 @@
 # Bee-Safe-Plants-App
-the thing. its pretty cool
+ok, so this is where we put things for the app etc. 
+# I like pancakes
