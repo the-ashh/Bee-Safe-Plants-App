@@ -27074,19 +27074,29 @@ sub {
 }
 
 .scroll-content {
-  background: #000000;
+  background-image: url("./heh copy.png");
 }
 
 .ion-image {
-  background-image: url("http://cooler9711.me/heh.png");
+  background-image: url("heh copy.png");
 }
 
-.ion-content {
-  border-style: none;
+.ion-card {
+  border-width: 100px;
+  border-color: #00FFFF;
 }
 
 my-component {
   background: #55acee;
+}
+
+.logo-text-body {
+  text-align: center;
+}
+
+.name-size {
+  font-size: 64px;
+  text-align: center;
 }
 
 .scroll-content {
@@ -28031,6 +28041,7 @@ my-component {
   border-style: none;
 }
 
-.size {
+.after_scan_text {
   font-size: 32px;
+  text-align: center;
 }

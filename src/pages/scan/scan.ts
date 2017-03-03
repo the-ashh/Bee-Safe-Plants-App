@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 //import { BarcodeData } from '../home/home';
 //import { PlantInfo } from '../home/home';
-import { click } from '../home/home';
 
 //var result = BarcodeData;
 //var text = PlantInfo.details
