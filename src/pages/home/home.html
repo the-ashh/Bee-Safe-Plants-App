@@ -1,17 +1,14 @@
 <ion-navbar *navbar>
   <ion-title>
-    Home
+    Bee-Safe Plants
   </ion-title>
 </ion-navbar>
 
-<ion-content class="home">
-  <ion-card>
-    <ion-card-header>
-      Scan
-    </ion-card-header>
-    <ion-card-content>
-      <button block (click)="click()">Scan</button>
-      <button block (click)="fakeScan()">Fake Scan</button>
-    </ion-card-content>
-  </ion-card>
+
+
+<ion-content class=".scroll-content" scroll="false" background="heh copy.png">
+
+  <ion-footer color='#000000'>
+    <button ion-button color="yello" large block (click)="click()">Scan a Plant</button>
+  </ion-footer>
 </ion-content>

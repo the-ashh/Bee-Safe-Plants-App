@@ -1,20 +1,25 @@
 import { Component } from '@angular/core';
-import {NavController, NavParams} from 'ionic-angular';
-import {BarcodeData} from '../home/home';
+import { NavController, NavParams } from 'ionic-angular';
+//import { BarcodeData } from '../home/home';
+//import { PlantInfo } from '../home/home';
+import { click } from '../home/home';
 
+//var result = BarcodeData;
+//var text = PlantInfo.details
 @Component({
-  selector: 'page-scan',
-  templateUrl: 'scan.html'
+    selector: 'page-scan',
+    templateUrl: '../scan/scan.html'
 })
 
 export class ScanPage {
-    barcodeData: BarcodeData;
+   message: string
+   // barcodeData: BarcodeData;
 
     constructor(private nav: NavController, navParams: NavParams) {
-        this.barcodeData = navParams.get('details');
+        this.message = navParams.get('details');
     }
 
-    back() {
-        this.nav.pop();
-    }
+//    back() {
+  //      this.nav.pop();
+   // }
 }
