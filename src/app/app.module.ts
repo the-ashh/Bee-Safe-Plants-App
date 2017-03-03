@@ -3,12 +3,18 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ScanPage } from '../pages/scan/scan';
+import { BadPlant } from '../pages/BadPlant/BadPlant';
+import { GoodPlant } from '../pages/GoodPlant/GoodPlant';
+import { NotInDatabase } from '../pages/NotInDatabase/NotInDatabase';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ScanPage
+    ScanPage,
+    BadPlant,
+    GoodPlant,
+    NotInDatabase
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -17,7 +23,10 @@ import { ScanPage } from '../pages/scan/scan';
   entryComponents: [
     MyApp,
     HomePage,
-    ScanPage
+    ScanPage,
+    BadPlant,
+    GoodPlant,
+    NotInDatabase
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

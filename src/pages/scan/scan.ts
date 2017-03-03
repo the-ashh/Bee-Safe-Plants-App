@@ -12,13 +12,17 @@ import { NavController, NavParams } from 'ionic-angular';
 
 export class ScanPage {
    message: string
+   color: string
+   
    // barcodeData: BarcodeData;
 
     constructor(private nav: NavController, navParams: NavParams) {
         this.message = navParams.get('details');
+        this.color = '#' + navParams.get('pancakes');
     }
 
-//    back() {
-  //      this.nav.pop();
-   // }
+    back() {
+        this.nav.pop();
+    }
 }
+

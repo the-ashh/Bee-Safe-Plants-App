@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
 import { BarcodeScanner } from 'ionic-native';
 import { ScanPage } from '../scan/scan';
+import { BadPlant } from '../BadPlant/BadPlant';
+import { GoodPlant } from '../GoodPlant/GoodPlant';
+import { NotInDatabase } from '../NotInDatabase/NotInDatabase';
 import { NavController } from 'ionic-angular';
 
 var plantData: PlantInfo[] = new Array(9)
+
 
 @Component({
 	selector: 'page-home',
@@ -30,10 +34,6 @@ export class HomePage {
 					const barcodeData = new BarcodeData(result.text, result.format);
 					this.scanDetails(barcodeData);
 				}
-				else {
-
-					this.nav.push(ScanPage, { details: 'at least it switched pages' })
-				}
 			})
 
 			.catch((err) => {
@@ -48,26 +48,26 @@ export class HomePage {
 			if (plantData[index].barcode == details.text) {
 				isSafe = plantData[index].beeSafe;
 				if (plantData[index].beeSafe == 2) {
-					this.nav.push(ScanPage, { details: 'This plant is safe for bees.' });
+					this.nav.push(GoodPlant, { });
 				}
 				else if (plantData[index].beeSafe == 1) {
-					this.nav.push(ScanPage, { details: 'This plant is NOT safe for bees.' });
+					this.nav.push(BadPlant, {  });
 				}
 				else {
-					this.nav.push(ScanPage, { details: 'This plant is not in our database yet.' });
+					this.nav.push(NotInDatabase, { });
 				}
 			}
 
 			else if (plantData[index].barcode == details.text.substring(1, 5)) {
 				isSafe = plantData[index].beeSafe;
 				if (plantData[index].beeSafe == 2) {
-					this.nav.push(ScanPage, { details: 'This plant is safe for bees.' });
+					this.nav.push(GoodPlant, { });
 				}
 				else if (plantData[index].beeSafe == 1) {
-					this.nav.push(ScanPage, { details: 'This plant is NOT safe for bees.' });
+					this.nav.push(BadPlant, { });
 				}
 				else {
-					this.nav.push(ScanPage, { details: 'This plant is not in our database yet.' });
+					this.nav.push(NotInDatabase, { });
 				}
 			}
 		}
@@ -76,7 +76,7 @@ export class HomePage {
 
 	fakeScan() {
 		console.log("FaceScan Click");
-		this.scanDetails(new BarcodeData('barcode', 'FAKE_FORMAT'));
+		this.scanDetails(new BarcodeData('092852066051', 'FAKE_FORMAT'));
 	}
 
 }
@@ -94,8 +94,12 @@ export class PlantInfo {
 		public beeSafe: number
 	) { }
 }
+export class text_color {
+	constructor(
+		public after_scan_color: String
+	) { }
+}
+export function click() {
 
-export function click(){
-	
 }
 
