@@ -25,4 +25,3 @@ export class ScanPage {
         this.nav.pop();
     }
 }
-

@@ -102,4 +102,3 @@ export class text_color {
 export function click() {
 
 }
-

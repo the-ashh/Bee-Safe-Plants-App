@@ -11,7 +11,6 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 
 export class BadPlant {
-   // barcodeData: BarcodeData;
 
     constructor(private nav: NavController, navParams: NavParams) {
         
@@ -21,4 +20,3 @@ export class BadPlant {
         this.nav.pop();
     }
 }
-

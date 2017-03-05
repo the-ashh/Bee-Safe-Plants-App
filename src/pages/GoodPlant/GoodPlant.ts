@@ -7,14 +7,10 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 
 export class GoodPlant {
-   
-
     constructor(private nav: NavController, navParams: NavParams) {
 
     }
-
     back() {
         this.nav.pop();
     }
 }
-
