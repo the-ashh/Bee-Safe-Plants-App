@@ -6,7 +6,7 @@ import { GoodPlant } from '../GoodPlant/GoodPlant';
 import { NotInDatabase } from '../NotInDatabase/NotInDatabase';
 import { NavController } from 'ionic-angular';
 
-var plantData: PlantInfo[] = new Array(9)
+var plantData: PlantInfo[] = new Array(10)
 
 
 @Component({
@@ -25,6 +25,7 @@ export class HomePage {
 		plantData[6] = new PlantInfo('087684001004', 2);
 		plantData[7] = new PlantInfo('46731', 2);
 		plantData[8] = new PlantInfo('99993', 2);
+		plantData[9] = new PlantInfo('028000463687', 2)
 	}
 
 	click() {
@@ -41,42 +42,40 @@ export class HomePage {
 			})
 	}
 
-	scanDetails(details) {
-		console.log("scanDetails ()");
+	scanDetails(barcode) {
 		var isSafe = 0;
 		for (var index = 0; index < plantData.length; index++) {
-			if (plantData[index].barcode == details.text) {
+			if (plantData[index].barcode == barcode.text) {
 				isSafe = plantData[index].beeSafe;
 				if (plantData[index].beeSafe == 2) {
-					this.nav.push(GoodPlant, { });
+					this.nav.push(GoodPlant, {});
+					return;
 				}
 				else if (plantData[index].beeSafe == 1) {
-					this.nav.push(BadPlant, {  });
-				}
-				else {
-					this.nav.push(NotInDatabase, { });
+					this.nav.push(BadPlant, {});
+					return;
 				}
 			}
 
-			else if (plantData[index].barcode == details.text.substring(1, 5)) {
+			else if (plantData[index].barcode == barcode.text.substring(1, 5)) {
 				isSafe = plantData[index].beeSafe;
 				if (plantData[index].beeSafe == 2) {
-					this.nav.push(GoodPlant, { });
+					this.nav.push(GoodPlant, {});
+					return;
 				}
 				else if (plantData[index].beeSafe == 1) {
-					this.nav.push(BadPlant, { });
-				}
-				else {
-					this.nav.push(NotInDatabase, { });
+					this.nav.push(BadPlant, {});
+					return;
 				}
 			}
+
 		}
-
+		this.nav.push(NotInDatabase, barcode.text);
 	}
 
 	fakeScan() {
 		console.log("FaceScan Click");
-		this.scanDetails(new BarcodeData('092852066051', 'FAKE_FORMAT'));
+		this.scanDetails(new BarcodeData('09285206683738393738', 'FAKE_FORMAT'));
 	}
 
 }

@@ -7,9 +7,9 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 
 export class NotInDatabase {
-   
+   barcode: String;
     constructor(private nav: NavController, navParams: NavParams) {
-
+        this.barcode = navParams.data;
     }
 
     back() {

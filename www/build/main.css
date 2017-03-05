@@ -27082,7 +27082,7 @@ sub {
 .good_plant_text {
   font-size: 32px;
   text-align: center;
-  color: green;
+  color: #00FF00;
 }
 
 .not_in_database_text {
