@@ -27098,6 +27098,12 @@ sub {
   background-position: center;
 }
 
+.title {
+  font-size: 46px;
+  color: yellow;
+  text-align: center;
+}
+
 .landing-page {
   background: black;
 }
