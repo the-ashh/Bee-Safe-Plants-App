@@ -42,28 +42,36 @@ export class HomePage {
 			})
 	}
 
-	scanDetails(barcode) {
+	scanDetails(barcode) 
+	{
 		var isSafe = 0;
-		for (var index = 0; index < plantData.length; index++) {
-			if (plantData[index].barcode == barcode.text) {
+		for (var index = 0; index < plantData.length; index++) 
+		{
+			if (plantData[index].barcode == barcode.text) 
+			{
 				isSafe = plantData[index].beeSafe;
-				if (plantData[index].beeSafe == 2) {
+				if (plantData[index].beeSafe == 2) 
+				{
 					this.nav.push(GoodPlant, {});
 					return;
 				}
-				else if (plantData[index].beeSafe == 1) {
+				else if (plantData[index].beeSafe == 1) 
+				{
 					this.nav.push(BadPlant, {});
 					return;
 				}
 			}
 
-			else if (plantData[index].barcode == barcode.text.substring(1, 5)) {
+			else if (plantData[index].barcode == barcode.text.substring(1, 5)) 
+			{
 				isSafe = plantData[index].beeSafe;
-				if (plantData[index].beeSafe == 2) {
+				if (plantData[index].beeSafe == 2) 
+				{
 					this.nav.push(GoodPlant, {});
 					return;
 				}
-				else if (plantData[index].beeSafe == 1) {
+				else if (plantData[index].beeSafe == 1) 
+				{
 					this.nav.push(BadPlant, {});
 					return;
 				}
@@ -73,31 +81,36 @@ export class HomePage {
 		this.nav.push(NotInDatabase, barcode.text);
 	}
 
-	fakeScan() {
+	fakeScan() 
+	{
 		console.log("FaceScan Click");
 		this.scanDetails(new BarcodeData('09285206683738393738', 'FAKE_FORMAT'));
 	}
 
 }
 
-export class BarcodeData {
+export class BarcodeData 
+{
 	constructor(
 		public text: String,
 		public format: String
 	) { }
 }
 
-export class PlantInfo {
+export class PlantInfo
+{
 	constructor(
 		public barcode: String,
 		public beeSafe: number
 	) { }
 }
-export class text_color {
+export class text_color 
+{
 	constructor(
 		public after_scan_color: String
 	) { }
 }
-export function click() {
+export function click() 
+{
 
 }
