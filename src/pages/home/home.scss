@@ -1,7 +1,8 @@
-
 .main-background {
-background-image: url('../assets/img/background.png');
-background-size: cover;
+overflow: hidden;
+background: black;
+background-image: url('../assets/img/background_copy.png');
+background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
 }
