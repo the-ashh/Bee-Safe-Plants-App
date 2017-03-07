@@ -84,7 +84,7 @@ export class HomePage {
 	fakeScan() 
 	{
 		console.log("FaceScan Click");
-		this.scanDetails(new BarcodeData('09285206683738393738', 'FAKE_FORMAT'));
+		this.scanDetails(new BarcodeData('fakeScan', 'FAKE_FORMAT'));
 	}
 
 }

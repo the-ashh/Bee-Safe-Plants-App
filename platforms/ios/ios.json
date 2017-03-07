@@ -56,6 +56,9 @@
         }
     },
     "installed_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.ionscannerv2751410"
+        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.ionicframework.ionscannerv2751410"
         },
@@ -140,6 +143,7 @@
         }
     ],
     "plugin_metadata": {
+        "cordova-plugin-compat": "1.1.0",
         "cordova-plugin-console": "1.0.5",
         "cordova-plugin-device": "1.1.4",
         "cordova-plugin-splashscreen": "4.0.1",
