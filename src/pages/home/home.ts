@@ -18,7 +18,7 @@ export class HomePage {
 	constructor(public nav: NavController) {
 		plantData[0] = new PlantInfo('092852066051', 1);
 		plantData[1] = new PlantInfo('092852000826', 1);
-		plantData[2] = new PlantInfo('096619394494', 2);
+		plantData[2] = new PlantInfo('096619394490', 2);
 		plantData[3] = new PlantInfo('022532358817', 1);
 		plantData[4] = new PlantInfo('046731582415', 2);
 		plantData[5] = new PlantInfo('096619183289', 2);
@@ -47,7 +47,7 @@ export class HomePage {
 		var isSafe = 0;
 		for (var index = 0; index < plantData.length; index++) 
 		{
-			if (plantData[index].barcode == barcode.text) 
+			if (plantData[index].barcode.includes(barcode.text)) 
 			{
 				isSafe = plantData[index].beeSafe;
 				if (plantData[index].beeSafe == 2) 
@@ -62,7 +62,7 @@ export class HomePage {
 				}
 			}
 
-			else if (plantData[index].barcode.substring(1,5) == barcode.text.substring(1, 5)) 
+			else if (plantData[index].barcode.includes(barcode.text.substring(1, 5))) 
 			{
 				isSafe = plantData[index].beeSafe;
 				if (plantData[index].beeSafe == 2) 
@@ -84,7 +84,7 @@ export class HomePage {
 	fakeScan() 
 	{
 		console.log("FaceScan Click");
-		this.scanDetails(new BarcodeData('fakeScan', 'FAKE_FORMAT'));
+		this.scanDetails(new BarcodeData('18483747', 'FAKE_FORMAT'));
 	}
 
 }

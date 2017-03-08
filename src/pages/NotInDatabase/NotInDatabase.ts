@@ -16,4 +16,3 @@ export class NotInDatabase {
         this.nav.pop();
     }
 }
-
