@@ -5,7 +5,7 @@ import { GoodPlant } from '../GoodPlant/GoodPlant';
 import { NotInDatabase } from '../NotInDatabase/NotInDatabase';
 import { NavController } from 'ionic-angular';
 
-var plantData: PlantInfo[] = new Array(10)
+var plantData: PlantInfo[] = new Array(9)
 
 
 @Component({
@@ -20,12 +20,11 @@ export class HomePage {
 		plantData[1] = new PlantInfo('092852000826', 1);
 		plantData[2] = new PlantInfo('096619394490', 2);
 		plantData[3] = new PlantInfo('022532358817', 1);
-		plantData[4] = new PlantInfo('046731582415', 2);
-		plantData[5] = new PlantInfo('096619183289', 2);
-		plantData[6] = new PlantInfo('087684001004', 2);
-		plantData[7] = new PlantInfo('046731', 2);
-		plantData[8] = new PlantInfo('099993', 2);
-		plantData[9] = new PlantInfo('028000463687', 2)
+		plantData[4] = new PlantInfo('096619183289', 2);
+		plantData[5] = new PlantInfo('087684001004', 2);
+		plantData[6] = new PlantInfo('046731', 2);
+		plantData[7] = new PlantInfo('099993', 2);
+		plantData[8] = new PlantInfo('028000463687', 2)
 	}
 
 	click() {
