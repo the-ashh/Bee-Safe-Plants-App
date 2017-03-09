@@ -68,7 +68,7 @@ export class HomePage {
 				}
 			}
 
-			else if (plantData[index].barcode.includes(this.scanned_barcode.substring(1, 5))) 
+			else if (this.scanned_barcode.substring(1,5) == plantData[index].barcode) 
 			{
 				isSafe = plantData[index].beeSafe;
 				if (plantData[index].beeSafe == 2) 
