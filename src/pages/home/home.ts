@@ -18,7 +18,7 @@ export class HomePage {
 	constructor(public nav: NavController) {
 		plantData[0] = new PlantInfo('092852066051', 1);
 		plantData[1] = new PlantInfo('092852000826', 1);
-		plantData[2] = new PlantInfo('096619394490', 2);
+		plantData[2] = new PlantInfo('096619394494', 2);
 		plantData[3] = new PlantInfo('022532358817', 1);
 		plantData[4] = new PlantInfo('096619183289', 2);
 		plantData[5] = new PlantInfo('087684001004', 2);
