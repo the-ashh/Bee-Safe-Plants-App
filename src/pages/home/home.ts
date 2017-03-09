@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { BarcodeScanner } from 'ionic-native';
-import { ScanPage } from '../scan/scan';
 import { BadPlant } from '../BadPlant/BadPlant';
 import { GoodPlant } from '../GoodPlant/GoodPlant';
 import { NotInDatabase } from '../NotInDatabase/NotInDatabase';
@@ -15,6 +14,7 @@ var plantData: PlantInfo[] = new Array(10)
 })
 export class HomePage {
 	scanned_barcode: string;
+	
 	constructor(public nav: NavController) {
 		plantData[0] = new PlantInfo('092852066051', 1);
 		plantData[1] = new PlantInfo('092852000826', 1);
@@ -23,8 +23,8 @@ export class HomePage {
 		plantData[4] = new PlantInfo('046731582415', 2);
 		plantData[5] = new PlantInfo('096619183289', 2);
 		plantData[6] = new PlantInfo('087684001004', 2);
-		plantData[7] = new PlantInfo('46731', 2);
-		plantData[8] = new PlantInfo('99993', 2);
+		plantData[7] = new PlantInfo('046731', 2);
+		plantData[8] = new PlantInfo('099993', 2);
 		plantData[9] = new PlantInfo('028000463687', 2)
 	}
 
@@ -68,7 +68,7 @@ export class HomePage {
 				}
 			}
 
-			else if (this.scanned_barcode.substring(1,5) == plantData[index].barcode) 
+			else if (this.scanned_barcode.includes(plantData[index].barcode)) 
 			{
 				isSafe = plantData[index].beeSafe;
 				if (plantData[index].beeSafe == 2) 
@@ -90,7 +90,7 @@ export class HomePage {
 	fakeScan() 
 	{
 		console.log("FaceScan Click");
-		this.scanDetails(new BarcodeData('18483747', 'FAKE_FORMAT'));
+		this.scanDetails(new BarcodeData('099993450060', 'FAKE_FORMAT'));
 	}
 
 }
@@ -106,7 +106,7 @@ export class BarcodeData
 export class PlantInfo
 {
 	constructor(
-		public barcode: String,
+		public barcode: string,
 		public beeSafe: number
 	) { }
 }
