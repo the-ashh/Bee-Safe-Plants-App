@@ -14,7 +14,7 @@ var plantData: PlantInfo[] = new Array(10)
 	templateUrl: 'home.html'
 })
 export class HomePage {
-
+	scanned_barcode: string;
 	constructor(public nav: NavController) {
 		plantData[0] = new PlantInfo('092852066051', 1);
 		plantData[1] = new PlantInfo('092852000826', 1);
@@ -45,9 +45,15 @@ export class HomePage {
 	scanDetails(barcode) 
 	{
 		var isSafe = 0;
+		if (barcode.text.length > 12) {
+			this.scanned_barcode = barcode.text.substring(1,);
+		}
+		else {
+			this.scanned_barcode = barcode.text
+		}
 		for (var index = 0; index < plantData.length; index++) 
 		{
-			if (plantData[index].barcode.includes(barcode.text)) 
+			if (plantData[index].barcode.includes(this.scanned_barcode)) 
 			{
 				isSafe = plantData[index].beeSafe;
 				if (plantData[index].beeSafe == 2) 
@@ -62,7 +68,7 @@ export class HomePage {
 				}
 			}
 
-			else if (plantData[index].barcode.includes(barcode.text.substring(1, 5))) 
+			else if (plantData[index].barcode.includes(this.scanned_barcode.substring(1, 5))) 
 			{
 				isSafe = plantData[index].beeSafe;
 				if (plantData[index].beeSafe == 2) 
