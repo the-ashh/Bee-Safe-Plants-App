@@ -27074,19 +27074,19 @@ sub {
 }
 
 .bad_plant_text {
-  font-size: 48px;
+  font-size: 32px;
   text-align: center;
   color: red;
 }
 
 .good_plant_text {
-  font-size: 48px;
+  font-size: 32px;
   text-align: center;
   color: #00FF00;
 }
 
 .not_in_database_text {
-  font-size: 48px;
+  font-size: 32px;
   text-align: center;
   color: white;
 }
@@ -27094,7 +27094,7 @@ sub {
 .main-background {
   overflow: hidden;
   background: black;
-  background-image: url("../assets/img/background_copy.png");
+  background-image: url("../assets/img/background.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
