@@ -9,5 +9,6 @@ This app uses TypeScript, HTML, and CSS. Compiling uses the [Ionic Framework.](h
 # Know of any plants that contain bee harming pesticides?
 ___
 If you know of any plants that contain bee harming pesticides, post it as in issue with the title containing [plant]. Thanks in advance!
-___
-© 2017 Beehive Robotics
+
+
+###### © 2017 Beehive Robotics
