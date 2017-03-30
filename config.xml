@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ionicframework.ionscannerv2751410" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.beehiverobotics.beesafeplantss" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Bee-Safe Plants</name>
-    <description>An awesome Ionic/Cordova app.</description>
+    <description>A pretty cool app that scans the barcode of a plant and tells you if the plant you're buying contains neonics'</description>
     <author email="cooler9711@outlook.com" href="http://app.beesafeplants.com/">Beehive Lego Robotics</author>
     <content src="index.html" />
     <access origin="*" />
