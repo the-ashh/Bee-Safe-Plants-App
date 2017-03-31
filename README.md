@@ -4,7 +4,7 @@ This is a simple app that scans the barcode of a plant and tells the user if the
 
 # How it works
 
-This app uses TypeScript, HTML, and CSS. Compiling uses the [Ionic Framework.](http://ionicframework.com) It looks really good and compiles good. Ionic has really well written documentation. 
+This app uses TypeScript, HTML, and CSS. Compiling uses the [Ionic Framework.](http://ionicframework.com) It looks really good and compiles good. Ionic has really well written documentation. [(Here is the link for the main part of the coding)](https://github.com/cooler9711/Bee-Safe-Plants-App/blob/master/src/pages/home/home.ts)
 
 # Know of any plants that contain bee harming pesticides?
 
