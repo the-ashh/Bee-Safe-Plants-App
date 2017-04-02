@@ -5,7 +5,7 @@ import { GoodPlant } from '../GoodPlant/GoodPlant';
 import { NotInDatabase } from '../NotInDatabase/NotInDatabase';
 import { NavController } from 'ionic-angular';
 
-var plantData: PlantInfo[] = new Array(9)
+var plantData: PlantInfo[] = new Array(10)
 
 
 @Component({
@@ -16,6 +16,7 @@ export class HomePage {
 	scanned_barcode: string;
 	
 	constructor(public nav: NavController) {
+		//1 is bad, 2 is good
 		plantData[0] = new PlantInfo('092852066051', 1);
 		plantData[1] = new PlantInfo('092852000826', 1);
 		plantData[2] = new PlantInfo('096619394494', 2);
@@ -25,6 +26,7 @@ export class HomePage {
 		plantData[6] = new PlantInfo('046731', 2);
 		plantData[7] = new PlantInfo('099993', 2);
 		plantData[8] = new PlantInfo('028000463687', 2)
+		plantData[9] = new PlantInfo('725593200506', 2)
 	}
 
 	click() {
