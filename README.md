@@ -12,3 +12,4 @@ If you know of any plants that contain bee harming pesticides, post it as in iss
 
 
 ###### © 2017 Beehive Robotics
+###### MIT License
