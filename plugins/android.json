@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.ionscannerv2751410"
-        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.ionicframework.ionscannerv2751410"
         },
@@ -27,6 +24,9 @@
         },
         "phonegap-plugin-barcodescanner": {
             "PACKAGE_NAME": "com.ionicframework.ionscannerv2751410"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "appinventor.ai_kaden_m_gordon.Beesafeplants"
         }
     },
     "dependent_plugins": {

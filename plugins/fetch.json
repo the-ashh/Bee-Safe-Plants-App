@@ -7,14 +7,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-console": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-console@1.0.5"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-statusbar": {
         "source": {
             "type": "registry",
@@ -61,6 +53,14 @@
             "id": "cordova-plugin-compat"
         },
         "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-console@~1.0.5"
+        },
+        "is_top_level": true,
         "variables": {}
     }
 }
