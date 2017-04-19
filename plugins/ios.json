@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
-        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
         },
@@ -27,6 +24,12 @@
         },
         "phonegap-plugin-barcodescanner": {
             "CAMERA_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
+        },
+        "ionic-plugin-deploy": {
             "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
         }
     },

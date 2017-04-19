@@ -8,30 +8,33 @@
     },
     "installed_plugins": {
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.ionscannerv2751410"
+            "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.ionscannerv2751410"
+            "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.ionscannerv2751410"
+            "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.ionscannerv2751410"
+            "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.ionscannerv2751410"
+            "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
         },
         "phonegap-plugin-barcodescanner": {
-            "PACKAGE_NAME": "com.ionicframework.ionscannerv2751410"
+            "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "appinventor.ai_kaden_m_gordon.Beesafeplants"
+            "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
+        },
+        "ionic-plugin-deploy": {
+            "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.ionicframework.ionscannerv2751410"
+            "PACKAGE_NAME": "com.beehiverobotics.beesafeplantss"
         }
     }
 }

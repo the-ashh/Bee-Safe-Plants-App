@@ -6,6 +6,16 @@ import { ScanPage } from '../pages/scan/scan';
 import { BadPlant } from '../pages/BadPlant/BadPlant';
 import { GoodPlant } from '../pages/GoodPlant/GoodPlant';
 import { NotInDatabase } from '../pages/NotInDatabase/NotInDatabase';
+import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
+import {Deploy} from '@ionic/cloud-angular';
+
+
+const cloudSettings: CloudSettings = {
+  'core': {
+    'app_id': '264e9da0'
+  }
+};
+
 
 @NgModule({
   declarations: [
@@ -17,7 +27,8 @@ import { NotInDatabase } from '../pages/NotInDatabase/NotInDatabase';
     NotInDatabase
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    CloudModule.forRoot(cloudSettings)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -30,4 +41,8 @@ import { NotInDatabase } from '../pages/NotInDatabase/NotInDatabase';
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(public deploy: Deploy) {
+    
+  }
+}

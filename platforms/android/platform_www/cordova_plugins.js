@@ -40,19 +40,28 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.barcodeScanner"
         ]
+    },
+    {
+        "id": "ionic-plugin-deploy.IonicDeploy",
+        "file": "plugins/ionic-plugin-deploy/www/ionicdeploy.js",
+        "pluginId": "ionic-plugin-deploy",
+        "clobbers": [
+            "IonicDeploy"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
+    "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-device": "1.1.4",
     "cordova-plugin-splashscreen": "4.0.1",
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
     "ionic-plugin-keyboard": "2.2.1",
-    "cordova-plugin-compat": "1.1.0",
     "phonegap-plugin-barcodescanner": "6.0.5",
-    "cordova-plugin-console": "1.0.6"
+    "cordova-plugin-console": "1.0.6",
+    "ionic-plugin-deploy": "0.6.6"
 };
 // BOTTOM OF METADATA
 });

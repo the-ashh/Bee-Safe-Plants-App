@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.beehiverobotics.beesafeplantss" version="1.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.beehiverobotics.beesafeplantss" version="1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Bee-Safe Plants</name>
     <description>A pretty cool app that scans the barcode of a plant and tells you if the plant you're buying contains neonics'</description>
     <author email="cooler9711@outlook.com" href="http://app.beesafeplants.com/">Beehive Lego Robotics</author>
@@ -79,4 +79,5 @@
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
     <plugin name="ionic-plugin-keyboard" spec="~2.2.1" />
     <plugin name="phonegap-plugin-barcodescanner" spec="~6.0.5" />
+    <plugin name="ionic-plugin-deploy" spec="~0.6.6" />
 </widget>
